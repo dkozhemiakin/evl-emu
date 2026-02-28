@@ -707,13 +707,6 @@ def signal_handler(signal, frame):
 		Create event handler processes to do interactions
 """
 
-# Move these to the top of the file
-logger = logging.getLogger(__name__)
-ch = logging.StreamHandler()
-ch.setFormatter(logging.Formatter(fmt='%(asctime)s - %(message)s', datefmt='%H:%M:%S'))
-logger.addHandler(ch)
-logger.setLevel(logging.INFO) # Or DEBUG if you need more info
-
 if __name__ == "__main__":
 
 	parser = argparse.ArgumentParser(description='Envisalink emulator for DSC-IT100')
